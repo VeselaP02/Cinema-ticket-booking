@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "movies")
-public class Movie {
+public class Movie extends IdEntities {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
