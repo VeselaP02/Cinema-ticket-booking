@@ -1,13 +1,12 @@
 package com.example.cinema_ticket_booking_system.entities;
 
 import jakarta.persistence.*;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "movies")
-public class Movie extends IdEntities {
+public class Movie extends BaseId {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

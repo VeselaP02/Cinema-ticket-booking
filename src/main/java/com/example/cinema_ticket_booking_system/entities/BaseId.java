@@ -8,7 +8,7 @@ import jakarta.persistence.MappedSuperclass;
 import java.util.Objects;
 
 @MappedSuperclass
-public class IdEntities {
+public class BaseId {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +25,7 @@ public class IdEntities {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof IdEntities that)) return false;
+        if (!(o instanceof BaseId that)) return false;
         return id.equals(that.id);
     }
 
